@@ -32,7 +32,7 @@ from darts_space.genotypes import Genotype
 # Utility
 # ===========================
 def exp_normalize(arr, lower=1, upper=100):
-    log_data = np.log(arr)  # 先对数变换，减小数据的差异
+    log_data = np.log(arr)  # 
     min_val = np.min(log_data)
     max_val = np.max(log_data)
     scaled = lower + (upper - lower) * (log_data - min_val) / (max_val - min_val)
